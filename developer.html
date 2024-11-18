@@ -1,0 +1,288 @@
+<!-- daniel_r0cha -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia - daniel_r0cha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Olá, eu sou Daniel Rocha Mendes</h1>
+        <p>dev junior em html, css e js | Apaixonado por Desenvolvimento web</p>
+        <!-- Botão Home com Ícone -->
+        <a href="index.html" class="home-btn">
+            <i class="fas fa-home"></i> Home
+        </a>
+    </header>
+
+    <section class="about">
+        <img src="img2.img/img2.jpeg" alt="Foto de Perfil">
+        <h2>Sobre Mim</h2>
+        <p>Sou um dev junior com experiência relevante em html5, css3 e js, Trabalho para criar impacto positivo através da criatividade. Além disso, adoro aprender sobre relações humanas e explorar novas oportunidades.</p>
+    </section>
+
+    <section class="skills">
+        <div class="skill-card">
+            <h3>Habilidade 1</h3>
+            <p>Facilidade em aprender e agilidade com html e css.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Habilidade 2</h3>
+            <p>Comunicativo, ótimo com trabalho em equipe.</p>
+        </div>
+        <div class="skill-card">
+            <h3>Habilidade 3</h3>
+            <p>Animações em js e css, além da criatividade.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Entre em Contato</h2>
+        <a href="https://www.instagram.com/daniel_r0ocha/" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://mail.google.com/mail/u/0/?pli=1#inbox">
+            <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="https://github.com/seu-usuario" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </section>
+
+    <footer>
+        &copy; 2024 @daniel_r0cha. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top < window.innerHeight && rect.bottom >= 0;
+        }
+
+        function handleScroll() {
+            const elements = document.querySelectorAll('section');
+            elements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        document.addEventListener('DOMContentLoaded', handleScroll);
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff8c42, #ff3e7f);
+            color: #ffffff;
+            text-align: center;
+            padding: 5rem 1rem;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            animation: fadeInDown 1.5s ease-in-out;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header h1,
+        header p {
+            font-size: 2rem;
+            margin: 0;
+            transition: transform 0.3s ease;
+            color: white; /* Garantir que a cor seja branca */
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Aumentar o tamanho de h1 e p ao passar o mouse */
+        header h1:hover,
+        header p:hover {
+            transform: scale(1.1);
+        }
+
+        .home-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff3e7f;
+            color: #ffffff;
+            font-size: 1rem;
+            padding: 0.8rem 1.2rem;
+            border-radius: 50px;
+            margin-top: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out 1.5s forwards;
+        }
+
+        .home-btn:hover {
+            background-color: #ff8c42;
+            transform: scale(1.1);
+        }
+
+        header h1:hover {
+            transform: scale(1.1); /* Aumentar o tamanho do h1 */
+        }
+
+        header p:hover {
+            transform: scale(1.1); /* Aumentar o tamanho do p */
+        }
+
+        .home-btn i {
+            margin-right: 10px;
+        }
+
+        section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+            margin-top: 4rem;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 3rem 1rem;
+            background: #1a1a1a;
+        }
+
+        .skills .skill-card {
+            background: #222222;
+            color: #ffffff;
+            margin: 1rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skills .skill-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(255, 62, 127, 0.5);
+        }
+
+        .skills .skill-card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #ff8c42;
+        }
+
+        .skills .skill-card p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #121212;
+        }
+
+        .contact h2 {
+            margin-bottom: 1rem;
+            color: #ff8c42;
+        }
+
+        .contact a {
+            color: #ff3e7f;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 1rem;
+            display: inline-block;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .contact a:hover {
+            color: #ff8c42;
+            transform: scale(1.1);
+        }
+
+        .contact a i {
+            margin-right: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222222;
+            color: #aaaaaa;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!-- @daniel_r0cha -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!--head-->
+    <header>
+        <h1>Tecnologia nas sociedades negras e a inclusão digital</h1>
+        <p>Explorando Culturas, Heranças e Questões Relevantes</p>
+    </header>
+
+    <!--Nav-->
+    <nav>
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="historia.html"><i class="fas fa-book"></i> História</a>
+        <a href="cultura.html"><i class="fas fa-globe"></i> Culturas</a>
+        <a href="heran.html"><i class="fas fa-history"></i> Heranças</a>
+        <a href="prd.html"><i class="fas fa-user"></i> Personalidades</a>
+        <a href="quest.html"><i class="fas fa-balance-scale"></i> Questões Sociais</a>
+        <a href="games.html"><i class="fas fa-gamepad"></i> Jogos Educativos</a>
+    </nav>
+
+    <!--Home-->
+    <section id="home">
+        <div class="subtitulo">
+            <h2>Temas Disponíveis</h2>
+        </div>
+
+        <!--temas-->
+        <section id="historia">
+            <h2><i class="fas fa-book"></i> Tecnologia nas sociedades negras</h2>
+            <p>Conteúdo sobre a importância da Tecnologia nas sociedades negras pelo mundo.</p>
+        </section>
+
+        <section id="culturas">
+            <h2><i class="fas fa-globe"></i> Inclusão Digital e Cultura negra</h2>
+            <p>Exploração das diferentes culturas africanas e seus  benefícios com a inclusão digital.</p>
+        </section>
+
+        <section id="herancas">
+            <h2><i class="fas fa-history"></i> Dificuldades da inclusão digital</h2>
+            <p>Informações sobre as Dificuldades da inclusão digital.</p>
+        </section>
+
+        <section id="personalidades">
+            <h2><i class="fas fa-user"></i> Benéficios da inclusão digital</h2>
+            <p>Benefícios da inclusão digital e como elas afetam positivamente o mundo.</p>
+        </section>
+
+        <section id="questoes">
+            <h2><i class="fas fa-balance-scale"></i> Representação digital negra</h2>
+            <p>Discussão de questões sociais e importantes representações para a comunidade negra.</p>
+        </section>
+
+        <section id="jogos">
+            <h2><i class="fas fa-gamepad"></i> Jogos Educativos</h2>
+            <p>Explore nossos jogos para aprender de forma divertida! (Ex: Quiz sobre História Africana, Caça-Palavras)</p>
+        </section>
+    </section>
+
+    <!--conclusão-->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Projeto Negritude.com. Todos os direitos reservados.</p>
+            <!--Links de nav-->
+            <div class="footer-nav">
+                <a href="team.html">Team</a>
+                <a href="developer.html">Developer</a>
+            </div>
+        </div>
+    </footer>
+    <style>
+        /*Body básico*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1.5em;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 1em 0;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            animation: fadeInUp 1.5s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+        /*Subtítulo*/
+        .subtitulo {
+            text-align: center;
+            padding: 1em;
+            font-size: 1.8em;
+            color: #333;
+            background-color: #f1f1f1;
+            margin: 2em 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1.5s ease;
+        }
+        .subtitulo::before, .subtitulo::after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 60px;
+            background-color: #333;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .subtitulo::before {
+            left: 10px;
+        }
+        .subtitulo::after {
+            right: 10px;
+        }
+        section {
+            padding: 3em 2em;
+            max-width: 800px;
+            margin: auto;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+
+        /*Estilo das seções com i*/
+        #historia { background: #fde3a7; margin-bottom: 20px; border-radius: 10px; padding: 20px; }
+        #culturas { background: #d4a5a5; margin-bottom: 20px; border-radius: 10px; padding: 20px; }
+        #herancas { background: #b4d8b4; margin-bottom: 20px; border-radius: 10px; padding: 20px; }
+        #personalidades { background: #a5a5d4; margin-bottom: 20px; border-radius: 10px; padding: 20px; }
+        #questoes { background: #d4a5ca; margin-bottom: 20px; border-radius: 10px; padding: 20px; }
+        #jogos { background: #ffd1a5; margin-bottom: 20px; border-radius: 10px; padding: 20px; }
+
+        /*animação*/
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /*footer*/
+        .footer-nav {
+            margin-top: 10px;
+        }
+
+        .footer-nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            opacity: 0.7;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .footer-nav a:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /*Resoponse*/
+        @media (max-width: 768px) {
+            /* Menu de navegação */
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+                font-size: 1.2em;
+            }
+
+            /* Ajustando título do header */
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            /* Ajustando subtítulo */
+            .subtitulo {
+                font-size: 1.5em;
+                padding: 1.5em;
+            }
+
+            /* Ajustando o tamanho das seções */
+            section {
+                padding: 2em 1em;
+            }
+
+            /* Ajustando imagens e textos nas seções */
+            section i {
+                font-size: 1.3em;
+            }
+
+            /* Ajustes no rodapé */
+            .footer-nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1em;
+            }
+
+            /* Ajustando tamanho de fonte e layout */
+            footer {
+                padding: 1em;
+            }
+        }
+
+        /* Para celulares muito pequenos (como smartphones antigos) */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .footer-nav a {
+                font-size: 0.9em;
+            }
+        }
+
+        /*Design i*/
+        section i {
+            margin-right: 10px;
+            font-size: 1.5em;
+            vertical-align: middle;
+            color: #333;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha do Tempo - Daniel Rocha Mendes</title>
+</head>
+<body>
+    <header id="header">
+        <h1>Família Tec.info 2022</h1>
+        <p>IF baiano Campus Bom Jesus da Lapa BA</p>
+    </header>
+    <!-- Menu de navegação -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <style>
+        /* Estilo para o Menu de Navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0; /* Alinha o menu ao lado direito */
+            padding: 1em;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #f0f0f0;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #800080; /* Cor ao passar o mouse */
+        }
+        </style>
+
+
+    <main>
+        <h2 id="timelineTitle">Uma Jornada de evolução e aprendizado</h2>
+        <section class="timeline">
+            <div class="timeline-item">
+                <h3>1. Pesquisa e roterização</h3>
+                <p>- Murilo Neves<br>
+                    - Isabella Lima Santana<br> 
+                    - Maria Vitória Silva Oliveira Santos<br> 
+                    - Breno de Medeiros Carvalho<br> 
+                    - Naiany Acetyda Nogueira Rodrigues<br> 
+                    - ⁠Joice Carvalho<br> 
+                    - ⁠Narla Alves<br>
+                    - ⁠Vinicius Alves Rodrigues<br> 
+                    - Antonio César de Oliveira Rocha<br> 
+                    - Caliane Silva de Jesus</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2. Criação, Arte e edição</h3>
+                <p>- Maria Gabriela Ribeiro Silva<br>
+                    - Murilo Neves<br>
+                    - Deivid Adrian dos Santos<br>
+                    - ⁠Eulália Cristina Sena<br>
+                    - Rian de Sena Mendes <br>
+                    - Lívia Ribeiro Cardoso<br>
+                    - Ana Carolina Silva <br>
+                    - ⁠Rayla Danielle Costa Marques<br>
+                    - Daniel Rocha Mendes <br>
+                    </p>
+            </div>
+            <div class="timeline-item">
+                <h3>3. Atores e atrizes</h3>
+                <p>- Daniela Magalhães dos Santos<br> 
+                    - Deivid Adrian dos Santos Campos<br>
+                    - Bruno Carvalho Silva<br>
+                    - Daniel Rocha Mendes <br>
+                    - Eduarda de Araújo Brito <br>
+                    - Ana Vitória da Silva Araújo <br>
+                    - Micael Souza Silva</p><br>
+            </div>
+            <div class="timeline-item">
+                <h3>4. Figurinos e continuidade</h3>
+                <p>- Yara Monique<br> 
+                    - Suellen Matos <br>
+                    - ⁠Flávia Vitória Fernandes Cardoso<br>
+                    - Jaqueline Garcia de Almeida <br>
+                    - ⁠Gabriele Lima<br>
+                    - Davi Ferreira <br>
+                    - ⁠Maria Clara C Magalhães</p><br>
+            </div>
+            <div class="timeline-item">
+                <h3>5. Apresentação e Narração </h3>
+                <p>- Camily Victoria<br> 
+                    - Uender Carvalho <br>
+                    - Cauan Alves da Silva M.<br>
+                    - Eduardo Carvalho de Oliveira</p>
+            </div>
+            <div class="timeline-item">
+                <h3>6. Direção e Produção</h3>
+                <p>- Murilo Neves<br>
+                    - Anna Clara dos Santos Souza<br> 
+                    - ⁠Maria Gabriela Ribeiro Silva <br>
+                    - Iasmin Rodrigues dos Santos<br>
+                    - Jaqueline Garcia de Almeida<br>
+                    - ⁠Vinicius Alves Rodrigues</p>
+            </div>
+        </section>
+
+        <!-- Seção de Lembranças -->
+        <section class="memories-section" id="memories">
+            <h2>Lembranças</h2>
+            <p>Essas são as memórias de momentos marcantes ao longo dessa jornada de crescimento e aprendizado. Cada etapa foi fundamental para chegar até aqui, e cada lembrança é uma parte essencial dessa história de evolução.</p>
+        </section>
+
+        <!-- Seção de Fotos -->
+        <section class="photos-section" id="photos">
+            <h2>Fotos do Processo</h2>
+            <div class="photos-gallery">
+                <img src="img3.img/img1.jpeg" alt="Foto 1">
+                <img src="img3.img/img2.jpeg" alt="Foto 2">
+                <img src="img3.img/img4.jpeg" alt="Foto 3">
+                <img src="img3.img/img3.jpeg" alt="Foto 4">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Projeto Negritude.com. Todos os direitos reservados.</p>
+    </footer>
+    
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            background: #121212;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animações suaves no Header */
+        header {
+            background: linear-gradient(135deg, #4b0082, #121212);
+            text-align: center;
+            padding: 5em 0;
+            opacity: 0;
+            transform: translateY(-100px); /* Inicialmente fora da tela */
+            transition: all 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #800080;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-out 0.5s;
+        }
+
+        header p {
+            font-size: 1.5em;
+            color: #f0f0f0;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-out 0.8s;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+        }
+
+        h2 {
+            text-align: center;
+            color: #800080;
+            margin-bottom: 1.5em;
+            opacity: 0; /* Inicialmente invisível */
+            transform: translateY(50px); /* Posição inicial fora da tela */
+            transition: all 1s ease-out;
+        }
+
+        .timeline {
+            border-left: 3px solid #800080;
+            padding-left: 1.5em;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            height: 100%;
+            width: 10px;
+            background: linear-gradient(to bottom, #4b0082, #121212);
+        }
+
+        .timeline-item {
+            margin-bottom: 3em;
+            position: relative;
+            opacity: 0; /* Invisível inicialmente */
+            transform: translateX(-50px); /* Posição inicial fora da tela */
+            transition: all 0.6s ease-out;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -17px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: #800080;
+            border-radius: 50%;
+            border: 2px solid #f0f0f0;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+        }
+
+        .timeline-item p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .timeline-item.visible {
+            opacity: 1; /* Torna visível */
+            transform: translateX(0); /* Volta à posição original */
+        }
+
+        /* Seção de Lembranças */
+        .memories-section {
+            padding: 2em 0;
+            background: #1a1a1a;
+            margin-top: 3em;
+            opacity: 0; /* Inicialmente invisível */
+            transform: translateY(50px);
+            transition: all 1s ease-out;
+        }
+
+        .memories-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .memories-section h2 {
+            margin-bottom: 1.5em;
+            font-size: 2.5em;
+            color: #800080;
+            text-align: center;
+        }
+
+        .memories-section p {
+            font-size: 1.2em;
+            color: #f0f0f0;
+            text-align: center;
+            margin: 0 10%;
+        }
+
+        /* Seção de Fotos */
+        .photos-section {
+            padding: 2em 0;
+            background: #1a1a1a;
+            margin-top: 3em;
+            opacity: 0; /* Inicialmente invisível */
+            transform: translateY(50px);
+            transition: all 1s ease-out;
+        }
+
+        .photos-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .photos-section h2 {
+            margin-bottom: 1.5em;
+            font-size: 2.5em;
+            color: #800080;
+            text-align: center;
+        }
+
+        .photos-gallery {
+            display: flex;
+            gap: 1.5em;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .photos-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .photos-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: #222;
+            color: #aaa;
+            margin-top: 2em;
+        }
+
+        /* Animação para Header */
+        .header-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .header-visible h1 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .header-visible p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Animação suave para h2 */
+        .h2-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <script>
+        // Função para ativar animações do Header
+        window.addEventListener('load', () => {
+            const header = document.getElementById('header');
+            setTimeout(() => {
+                header.classList.add('header-visible');
+            }, 300); // Atraso de animação para o efeito de entrada
+
+            // Ativando animação para o título do h2
+            const timelineTitle = document.getElementById('timelineTitle');
+            setTimeout(() => {
+                timelineTitle.classList.add('h2-visible');
+            }, 600); // Atraso para sincronizar com o header
+
+            // Ativando animação para a seção de Lembranças
+            const memoriesSection = document.getElementById('memories');
+            setTimeout(() => {
+                memoriesSection.classList.add('visible');
+            }, 900); // Atraso para animar após a linha do tempo
+
+            // Ativando animação para a seção de Fotos
+            const photosSection = document.getElementById('photos');
+            setTimeout(() => {
+                photosSection.classList.add('visible');
+            }, 1200); // Atraso para animar após as Lembranças
+        });
+
+        // Função para verificar se os itens da linha do tempo estão visíveis na tela
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        function handleScroll() {
+            const triggerBottom = window.innerHeight * 0.9; // Ponto para ativar a animação
+
+            timelineItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+
+                if (itemTop < triggerBottom) {
+                    item.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Verificar ao carregar a página
+    </script>
+</body>
+</html>

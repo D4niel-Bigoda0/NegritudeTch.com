@@ -1,0 +1,136 @@
+<!-- @daniel_r0cha -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Tecnologia nas sociedades negras e a inclusão digital</h1>
+        <p>Explorando Culturas, Heranças e Questões Relevantes</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="historia.html"><i class="fas fa-book"></i> História</a>
+        <a href="cultura.html"><i class="fas fa-globe"></i> Culturas</a>
+        <a href="heran.html"><i class="fas fa-history"></i> Heranças</a>
+        <a href="prd.html"><i class="fas fa-user"></i> Personalidades</a>
+        <a href="quest.html"><i class="fas fa-balance-scale"></i> Questões Sociais</a>
+        <a href="#jogos"><i class="fas fa-gamepad"></i> Jogos Educativos</a>
+    </nav>
+
+    <!-- Seções de conteúdo -->
+    <section id="home">
+        <h2>Bem-vindo ao Projeto Negritude.com</h2>
+        <p>Este projeto visa explorar e divulgar a importância do Novembro Negro, suas culturas, heranças e questões sociais.<br>
+            Resumo dos videos: https://www.youtube.com/watch?v=XKkRr9U3OwA<br>
+        Jogos <b>Em Breve...</b><br>
+            Envie seu feadback: (77)98713702</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Projeto Negritude.com. Todos os direitos reservados.</p>
+        <div class="footer-nav">
+            <a href="team.html">Team</a>
+            <a href="developer.html">Developer</a>
+        </div>
+    </footer>
+
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Cabeçalho */
+        header {
+            background-color: #ffd1a5; 
+            color: #333; /* Texto em cor escura */
+            padding: 1.5em;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+        header h1 {
+            margin: 0;
+        }
+        /* Navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fec48e;
+            padding: 1em 0;
+        }
+        nav a {
+            color: #333; 
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            animation: fadeInUp 1.5s ease;
+        }
+        nav a:hover {
+            background-color: #ffd1a5; 
+            transform: scale(1.1);
+        }
+        /* Conteúdo */
+        section {
+            flex-grow: 1;
+            padding: 3em 2em;
+            max-width: 800px;
+            margin: auto;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+        /* Rodapé */
+        footer {
+            background-color: #ffd1a5;
+            color: #333;
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+        }
+        footer .footer-nav {
+            margin-top: 1em;
+        }
+        footer .footer-nav a {
+            color: #333;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        footer .footer-nav a:hover {
+            opacity: 0.7;
+        }
+        /* Animações */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+
+</body>
+</html>
